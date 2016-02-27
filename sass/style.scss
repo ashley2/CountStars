@@ -1,6 +1,7 @@
 * {
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  color: white;
 }
 
 body {
@@ -8,9 +9,14 @@ body {
 }
 
 #header {
-  margin-top: 100px;
-  margin-bottom: 15px;
+  margin-top: 50px;
+  // margin-bottom: 15px;
+  font-size: 40px;
+}
+
+#directions {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 #starBox {
@@ -26,6 +32,8 @@ body {
     display: inline-block;
   }
 }
+
+
 
 #numberBox {
   .number {
@@ -145,6 +153,10 @@ button.active {
 }
 button:focus{
   outline: none;
+}
+
+#gameMessages {
+  padding-top: 300px;
 }
 
 

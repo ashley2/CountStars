@@ -1,14 +1,18 @@
 * {
   text-align: center;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  color: white; }
 
 body {
   background-color: #00ffcc; }
 
 #header {
-  margin-top: 100px;
-  margin-bottom: 15px;
-  font-size: 30px; }
+  margin-top: 50px;
+  font-size: 40px; }
+
+#directions {
+  font-size: 30px;
+  margin-bottom: 20px; }
 
 #starBox {
   height: 80px;
@@ -117,3 +121,6 @@ button.active {
 
 button:focus {
   outline: none; }
+
+#gameMessages {
+  padding-top: 300px; }

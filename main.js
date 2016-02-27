@@ -9,7 +9,7 @@ var numOfStars;
 function init() {
 
   getStars();
-
+  
 }
 
 $('#numberBox').on('click', '.number' , clickNum);
@@ -24,9 +24,8 @@ function roll() {
     count++;
   } 
   if (count === 3){ 
-    alert('No more turns\nPress restart to play again!')
+    $('#directions').text('No more turns. Press restart to play again!')
   }
-
 }
 
 function  getStars(){
@@ -36,10 +35,7 @@ function  getStars(){
     $('#starBox').append(star).text();
   };
   numOfStars = i;
-  console.log(numOfStars)
-
-
-  
+  console.log(numOfStars)  
 }
 
 function clickNum (){  //function to click the numbers
@@ -59,13 +55,14 @@ $('#confirm').click(function(){
     $('.selected').removeClass('selected');
     getStars();
   } else {
-   alert('Try again!');
+   $('#directions').text('Try Again!');
+
  }
 });
 
 function win (){
   if($('.disabled').length === 9 ){
-    alert('You Win!'); 
+    $('#directions').text('You Win!'); 
   }
 }
 

@@ -24,7 +24,7 @@ function roll() {
     count++;
   } 
   if (count === 3){ 
-    alert('no more turns')
+    alert('No more turns\nPress restart to play again!')
   }
 
 }
@@ -54,19 +54,18 @@ $('#confirm').click(function(){
    sum = sum + boxNum;
  });
   if (sum === numOfStars){
-    alert('win')
     $('.selected').off('click');
     $('.selected').addClass('disabled');
     $('.selected').removeClass('selected');
     getStars();
   } else {
-   alert('try again');
+   alert('Try again!');
  }
 });
 
 function win (){
   if($('.disabled').length === 9 ){
-    alert('win'); 
+    alert('You Win!'); 
   }
 }
 

@@ -22,9 +22,10 @@ function roll() {
   if (count < 3){
     getStars()
     count++;
+    $('#directions').text('You have used ' + count + ' turn(s) out of 3');
   } 
   if (count === 3){ 
-    $('#directions').text('No more turns. Press restart to play again!')
+    $('#directions').text('No more turns. Press restart to play again!');
   }
 }
 

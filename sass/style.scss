@@ -1,5 +1,6 @@
 * {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 #header {
@@ -9,12 +10,10 @@
 #starBox {
   height:80px;
   width: 100vw;
-  border: 2px solid black;
   margin-bottom: 50px;
 }
 
 #controlBox {
-  border: 2px solid black;
   margin-bottom: 50px;
   #restart, #confirm, #roll {
     display: inline-block;
@@ -22,12 +21,10 @@
 }
 
 #numberBox {
-  border: 2px solid black;
   .number {
     height: 30px;
     width: 30px;
     display: inline-block;
-    // border: 2px solid black;
   }
 }
 

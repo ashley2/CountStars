@@ -32,7 +32,7 @@ function roll() {
 function  getStars(){
   $('#starBox').empty();
   for (var i = 0; i < Math.floor(Math.random()*9+1); i++){
-    var star = $('<div>').addClass('stars');
+    var star = $('<div>').addClass('stars animated zoomInRight');
     $('#starBox').append(star).text();
   };
   numOfStars = i;
